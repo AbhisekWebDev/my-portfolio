@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* 1. CRITICAL: This tells Tailwind v4 to look for the "dark" class */
+/* Without this, it ignores your toggle button and looks at Windows/Mac settings */
+@variant dark (&:where(.dark, .dark *));
+
+/* 2. Set your default font */
+@theme {
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* 3. Global Styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+/* 4. Default Backgrounds to prevent flashing */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* When dark mode is active, change body background */
+:where(.dark) body {
+  @apply bg-[#0f172a] text-white;
+}
