@@ -30,8 +30,8 @@ function Resume() {
             </p>
 
             <motion.a
-                href="/MyResume.pdf"
-                download="Abhisek_Kumar_Resume.pdf"
+                href="/Abhishek_Kumar_resume.pdf"
+                download="Abhishek_Kumar_resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="relative z-10 inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-700 rounded-xl font-bold text-lg shadow-lg hover:shadow-white/20 transition-all"

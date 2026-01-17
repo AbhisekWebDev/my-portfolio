@@ -1,7 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import { motion } from 'framer-motion'
-import abhiProPic from '../assets/abhiProPic.png'
+import abhiProPicNormal from '../assets/abhiProPicNormal.png'
 
 const container = {
   hidden: { opacity: 0 },
@@ -96,7 +96,7 @@ function Header() {
           
           <div className="relative w-64 h-64 md:w-80 md:h-80">
              <img 
-               src={abhiProPic} 
+               src={abhiProPicNormal} 
                alt="Abhishek" 
                fetchPriority="high" // crucial for LCP
                loading="eager"      // default, but good to be explicit for LCP
